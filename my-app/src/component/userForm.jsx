@@ -10,7 +10,7 @@ const handleSubmit = (event) => {
     setEmail("");
 };
 return (
-    <form onSubmit={handleSbmit}>
+    <form onSubmit={handleSubmit}>
     <label>
         Name:
         <input type="text" value={name} onChange={(e) => setName(e.target.value)} />

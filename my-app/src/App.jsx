@@ -3,12 +3,14 @@ import UserList from "./component/userList";
 import UserForm from "./component/userForm";
 function App() {
   const [user, setUser] = useState([]);
-  const addUser = (user) => {
-    setUser([...users, user]);
+  const addUser = (newUser) => {
+    console.log(newUser);
+    setUser([...user, newUser]);
   };
 
   return (
     <div>
+      Prueba
       <UserForm onSubmit={addUser} />
       <UserList users={user} />
     </div>
