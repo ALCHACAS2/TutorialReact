@@ -10,7 +10,7 @@ function App() {
   return (
     <div>
       <UserForm onSubmit={addUser} />
-      <UserLis users={users} />
+      <UserList users={user} />
     </div>
   );
 }
