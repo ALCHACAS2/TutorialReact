@@ -1,7 +1,18 @@
-export default function App() {
+import React, { useState } from "react";
+import UserList from "./component/userList";
+import UserForm from "./component/userForm";
+function App() {
+  const [user, setUser] = useState([]);
+  const addUser = (user) => {
+    setUser([...users, user]);
+  };
+
   return (
-    <h1 className="text-3xl font-bold underline">
-      Hello world!
-    </h1>
-  )
+    <div>
+      <UserForm onSubmit={addUser} />
+      <UserLis users={users} />
+    </div>
+  );
 }
+
+export default App;
