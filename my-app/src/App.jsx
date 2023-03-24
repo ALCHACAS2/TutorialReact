@@ -9,7 +9,7 @@ function App() {
   };
 
   return (
-    <div>
+    <div class=" box-border bg-gray-700 to-#F6F1F1 rounded shadow h-0 flex flex-col justify-center">
       <UserForm onSubmit={addUser} />
       <UserList users={user} />
     </div>
