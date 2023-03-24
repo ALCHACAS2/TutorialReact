@@ -10,7 +10,6 @@ function App() {
 
   return (
     <div>
-      Prueba
       <UserForm onSubmit={addUser} />
       <UserList users={user} />
     </div>
