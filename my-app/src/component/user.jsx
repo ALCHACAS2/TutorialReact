@@ -1,5 +1,5 @@
 import React from "react";
-import './index.css'
+// import '../index.css';
 function User({name,email}){
     console.log(name,email,"userComponet");
     return (
